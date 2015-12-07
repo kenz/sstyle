@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+a:link,.virtualLink,a:visited   {
+  text-decoration: none;
+  color: #00BCD4;
+}
+a:hover  {
+   color: #FF4081;
+   transition-duration: 0.2s;
+}
+iframe{  margin: 4px;}
+a{
+  transition-duration: 0.4s;
+  display:inline-block;
+  padding:0.5em;
+}
+#Home h1,header a{ padding:0;}
+a.card:link ,a.card:visited{
+  font-weight:100;
+  text-align:center;
+  color:#222;
+}
+h1, h2, h3{ font-weight: 100;}
+h1{  font-size:3em;}
+#Home h1{ font-size: 6em;}
+#Home h2{ margin-bottom:10em;}
+#Home section h2{ margin-bottom:0em;}
+#Contact h1{ font-size:2em;}
+body {
+  text-align: center;
+  font-weight: 200;
+  color:#333;
+  margin:0;
+  background-color:#fff;
+  font-family: "Apple TP","Helvetica Neue","Helvetica","Hiragino Kaku Gothic Pro",'Noto Sans Japanese',sans-serif;
+}
+.search-box input[type="text"],.submit_button{
+  position: relative;
+  top:0px;
+  transition-timing-function:ease-in;
+  -webkit-transition-timing-function:ease-in;
+  transition-duration: 0.4s;
+  padding:0;
+}
+a.card::after{
+  content:"もっと見る";
+  color:#00BCD4;
+}
+.submit_button:hover{
+    background-color: #f84;
+    cursor: pointer;
+}
+a.card:hover,.search-box input[type="text"]:focus,.submit_button:hover{
+  transition-duration: 0.2s;
+  transform:scale(1.02,1.02);
+}
+#Home section,#Data section{ display:inline-block;}
+.card{
+  text-align: left;
+  display:inline-block;
+  max-width:30em;
+  overflow: hidden;
+  margin:10px 0;
+}
+#Home .card,#Data .card{ height:50em;}
+#Data .single{
+  max-width:none;
+  text-align: center;
+  height:auto;
+}
+
+.category{
+  margin-top:10em;
+  font-size:80%;
+}
+
+.card .author{
+  display:inline-block;
+  margin-top:20px;
+}
+.post-body{ font-size:140%;}
+.post-detail{
+ font-size:120%;
+  padding-top:2em;
+  clear:left;
+}
+#Data .card p{
+  margin-left: 1em;
+  margin-right:1em;
+  line-height: 180%;
+  margin-bottom:2em;
+}
+#Data .card footer p{ margin-bottom:0em;}
+header.page_header, footer.page_footer{
+  background-color:rgba(0,0,0,0.8);
+  color: white;
+	padding: 4px;
+  font-size: 16px;
+	position: relative;
+}
+header.page_header{ margin-bottom: 140px;}
+footer.page_footer{
+  border-top: .99px solid rgba(255,255,255,0.5);
+  margin-top: 10em;
+}
+footer.page_footer ul, footer.page_footer li{
+  list-style: disc;
+  display: inline-block;
+  padding:0;
+}
+section h2{
+  font-size:3em;
+  padding: 0;
+  margin: 30px 0;
+}
+#Home section p{
+  padding: 0 20px 20px 20px;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+.card section p:after{ clear:both;}
+img{
+  border-radius: 50%;
+  vertical-align:middle;
+  max-width: 100%;
+}
+.list-num{ margin-top:40px;}
+.search-box input[type="text"], .submit_button{
+  border: none;
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+  font-size:120%;
+  padding: 0.2em 1em;
+  border-radius: 1em;
+  margin-right:1em;
+  border-bottom:.99px solid #fff;
+  transition-duration: 0.4s;
+}
+.search-box input[type="text"]:focus,.submit_button:focus{ outline:0;}
+.contact{
+  display:inline-block;
+  padding:1em;
+}
+.contact h2{
+  font-size:100%;
+  font-weight: 800;
+  padding:0;
+}
+.contact p{ margin-top:0;}
+.contact textarea{ width:90%;}
+.alert-message{
+    border:1px solid red;
+    margin:1em;
+    padding:1em;
+    color:black;
+    text-shadow:none;
+    background-color:rgba(255,255,255,0.9)
+}
+.required{ color:#f80;}
+.form-error{
+  background-color:rgb(255,200,200);
+  border:1px solid :rgb(255,128,128);
+}
+.error-message{
+  color:#f80;
+  text-shadow: none;
+  display:inline-block;
+  background-color:white;
+  border:1px solid #f80;
+  border-radius:4px;
+}

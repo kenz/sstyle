@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/**
+ * レイアウト
+ *
+ * baserCMS :  Based Website Development Project <http://basercms.net>
+ * Copyright 2008 - 2015, baserCMS Users Community <http://sites.google.com/site/baserusers/>
+ *
+ * @copyright		Copyright 2008 - 2015, baserCMS Users Community
+ * @link			http://basercms.net baserCMS Project
+ * @since			baserCMS v 2.0.0
+ * @license			http://basercms.net/license/index.html
+ */
+
+
+/* ==================================================================== */
+/*    Page
+/* ==================================================================== */
+
+ * html div#Page{
+    height:100%;
+}
+div#Page {
+    margin:0px auto;
+    position:relative;
+    min-height: 100%;
+    background-color: #E8E8E8;
+}
+body > #Page {
+	height: auto;
+}
+
+
+/* ==================================================================== */
+/*    Header
+/* ==================================================================== */
+
+/* Header
+----------------------------------------------- */
+
+#Header {
+  background-color:#212121;
+	box-shadow:0 2px 4px rgba(0,0,0,0.6);
+
+}
+
+
+
+/* Logo
+----------------------------------------------- */
+
+#Logo{
+  float:left;
+  padding:20px;
+
+}
+
+/* GlobalMenu
+----------------------------------------------- */
+#GlobalMenu .material-icons i{
+  display: block;
+
+}
+#GlobalMenu{
+  font-size:15px;
+  line-height:24px;
+}
+#GlobalMenu ul{
+	padding: 18px 0px ;
+}
+#GlobalMenu ul li{
+	padding: 0 8px;
+	list-style:none;
+	float:left;
+  text-align:center;
+}
+#GlobalMenu a{
+  color:white;
+  display: inline-block;
+  font-size:9px;
+}
+#GlobalMenu a:hover{
+  text-shadow:0px 0px 14px #0f8,0px 0px 8px #ff0,;
+}
+#GlobalMenu a .material-icons{
+  font-size: 32px;
+}
+
+
+/* ==================================================================== */
+/*    Wrap
+/* ==================================================================== */
+
+
+#Wrap{
+	padding: 20px 20px 800px 40px;
+}
+
+
+/* ==================================================================== */
+/*    SideBar
+/* ==================================================================== */
+
+
+#SideBar{
+	width: 208px;
+	position: absolute;
+  display: inline-block;
+  transition-duration: 0.2s;
+  transition-timing-function:ease-in;
+}
+#Contents{
+  transition-timing-function:ease-in;
+  transition-duration: 0.2s;
+}
+#BtnSideBarOpener {
+	width:30px;
+	height:28px;
+	position:absolute;
+	z-index:1;
+	top:13px;
+	left:174px;
+	cursor:pointer;
+	line-height:28px;
+	text-align:center;
+	font-weight:bold;
+	border-left:1px solid #FFF;
+	color:#fff;
+	font-size:10px;
+}
+
+/* FavoriteMenu
+----------------------------------------------- */
+#FavoriteArea {
+	margin-bottom: 14px;
+    float: left;
+    width: 100%;
+    padding: 0 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#FavoriteMenu {
+    width: 100%;
+}
+
+#FavoriteMenu h2{
+	color: #FFF;
+  background: #607D8B;
+	padding: 6px 10px 0;
+}
+
+#FavoriteMenu h2 img {
+    margin: 0 0 -9px;
+}
+
+ul.favorite-menu-list a{
+	color: #333;
+	text-decoration: none;
+	display: block;
+	padding-top:3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#FavoriteMenu a:hover{
+	color: #AAA;
+	text-decoration: none;
+}
+ul.favorite-menu-list{
+	padding: 10px 15px;
+}
+ul.favorite-menu-list li{
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	border:2px solid #FFF;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+ul.favorite-menu-list li.selected{
+	border:2px solid #690;
+}
+ul.favorite-menu-list li.ui-sortable-helper {
+	border:2px solid #CCC;
+}
+.favolite-menu-tools li{
+	padding: 50px 0 0 15px;
+	float: left;
+	margin-right:5px;
+}
+#FavoriteMenu .no-data {
+	padding:10px 10px;
+	border:3px dotted #CCC;
+	background: none;
+}
+
+
+/* BannerArea
+----------------------------------------------- */
+#BannerArea li {
+	margin-bottom: 2px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+
+/* ==================================================================== */
+/*    Contents
+/* ==================================================================== */
+
+
+/* contents background
+----------------------------------------------- */
+#FavoriteArea .material-icons{
+  font-size:12px;
+}
+.cbb {
+	margin:1em 0;
+	background:#fff;
+  overflow: hidden;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+.cb {
+	float: left;
+	width: 100%;
+}
+
+/* contents border top
+----------------------------------------------- */
+.bt{
+	background: url(../../img/admin/bg_box_2.png) no-repeat 100% 0;
+    height: 10px;
+	margin:0 0 0 11px;
+}
+.bt div {
+	position:relative;
+	left:-11px;
+	width:11px;
+	height:10px;
+	background:url(../../img/admin/bg_box_2.png) no-repeat 0 0;
+	font-size:0;
+	line-height:0;
+}
+
+/* contents border bottom
+----------------------------------------------- */
+.bb{
+	background: url(../../img/admin/bg_box_1.png) no-repeat scroll 100% 100% transparent;
+    height:10px;
+	margin:0 0 0 12px;
+}
+
+.bb div {
+	background:url(../../img/admin/bg_box_1.png) no-repeat scroll 0 100% transparent;
+	font-size:0;
+	height:10px;
+	left:-12px;
+	line-height:0;
+	position:relative;
+	width:12px;
+}
+
+/* contents border left
+----------------------------------------------- */
+.i1 {
+	padding: 0 0 0 4px;
+	background:url(../../img/admin/bg_borders.png) repeat-y 0 0;
+}
+
+/* contents border right
+----------------------------------------------- */
+.i2 {
+	padding: 0 4px 0 0 ;
+	background:url(../../img/admin/bg_borders.png) repeat-y 100% 0;
+}
+
+/* contents border inner
+----------------------------------------------- */
+.i3 {
+	display: block;
+	margin: 0;
+	background-color: #FFF;
+}
+.i3:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.i3 {display: inline-block;}
+.i3 {display: block;}
+
+
+/* ==================================================================== */
+/*    ContentsBody
+/* ==================================================================== */
+
+
+/* ContentsBody
+----------------------------------------------- */
+#ContentsBody{
+	padding: 0 20px 40px;
+}
+
+
+/* ==================================================================== */
+/*    Footer
+/* ==================================================================== */
+
+
+/* Footer
+----------------------------------------------- */
+#Footer{
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+#FooterInner{
+	background-color:#3d3d3d;
+	color:white;
+}
+#FooterInner a{
+	color: #BBB;
+	text-decoration: none;
+}
+#FooterInner a:hover{
+	color: #EEE;
+  text-shadow: 0px 0px 4px #0f8;
+}
+
+#Footer h2{
+  font-size: 200%;
+  margin:1em;
+  padding-bottom:1em;
+  border-bottom: 1px solid #999;
+}
+
+/* FooterLogo
+----------------------------------------------- */
+
+#FooterLogo{
+  text-align: center;
+  padding:64px;
+}
+
+/* FooterMenu / FooterLink
+----------------------------------------------- */
+
+#FooterMenu{
+	margin: auto;
+	text-align: center;
+}
+#FooterMenu li,
+#FooterLink li{
+	padding-left:15px;
+	line-height:18px;
+  display: inline-block;
+}
+#FooterLink{
+  margin-top:32px;
+}
+
+/* FooterBanner
+----------------------------------------------- */
+#FooterBanner li{
+  margin-top:32px;
+	padding-left:15px;
+	line-height:18px;
+  display: inline-block;
+}
+/* BaserVersion
+----------------------------------------------- */
+
+#BaserVersion {
+	padding-right:20px;
+	text-align:right;
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+	margin-bottom:15px;
+}
+
+/* Copyright
+----------------------------------------------- */
+
+#Copyright {
+	text-align:right;
+	font-size:10px;
+	padding-right:20px;
+}
+
+
+@media screen and (max-width: 40em) {
+  #Wrap{
+  	padding: 0px 0px 800px 20px;
+  }
+  #ContentsBody{
+  	padding: 0 0 60px 0 ;
+  }
+  #cke_BlogPostDetailTmp{
+    margin-right: 1em;
+  }
+
+}

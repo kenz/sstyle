@@ -1,0 +1,12 @@
+<?php
+/**
+ * ヘッダー
+ */
+?>
+<header>
+	<?php if ($this->BcBaser->isHome()): ?>
+		<?php $this->BcBaser->contentsTitle(); ?>
+	<?php else: ?>
+		<?php $this->BcBaser->element('crumbs'); ?>
+	<?php endif ?>
+</header>
