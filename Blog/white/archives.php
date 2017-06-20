@@ -2,7 +2,10 @@
 /**
  * ブログアーカイブ一覧
  */
+
  fugafuga
+ hogehoge
+
 $this->BcBaser->setDescription($this->Blog->getTitle() . '｜' . $this->BcBaser->getContentsTitle() . 'のアーカイブ一覧です。');
 $substr = 100;
 ?>
